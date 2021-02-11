@@ -1,0 +1,79 @@
+@import '../partial/varibale.scss';
+
+/* 改变主题色变量 */
+$--color-primary: $color-primary;
+// $--color-primary: #00a2ae;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '../../../../node_modules/element-ui/lib/theme-chalk/fonts';
+
+@import "../../../../node_modules/element-ui/packages/theme-chalk/src/index";
+
+.el-button:active {
+  filter: brightness(1.2);
+}
+
+table th.must div::after {
+  content: '*';
+  color: #ff1818;
+}
+
+/* 改变星号位置 */
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before,
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
+  content: normal;
+  color: transparent;
+  margin-left: 0;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:after,
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:after {
+  content: '*';
+  color: #F56C6C;
+  margin-left: 0.053333rem;
+}
+
+/* 选择时间位置 */
+.el-time-panel.el-popper {
+  left: -20px;
+  right: 0;
+}
+
+.el-table_1_column_1.is-center.el-table-column--selection {
+  .cell {
+    padding: 0 !important;
+
+    .el-checkbox {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//表格线对不齐
+.el-table th.gutter {
+  display: table-cell !important;
+}
+
+.el-table::before {
+  height: 0;
+}
+
+.el-table--group::after, .el-table--border::after {
+  width: 0;
+}
+
+//Tooltip 文字提示
+.el-tooltip__popper.is-dark {
+  max-width: 800px; /*no*/
+  font-size: 14px; /*no*/
+  background-color: rgba(51, 51, 51, .9);
+  line-height: 24px; /*no*/
+  padding: 5px 10px!important; /*no*/
+}
+
+.table-content-boxes .content-boxes .el-table__empty-block{
+  border: 0.013333rem solid #EBEEF5;
+  border-top: none;
+  border-left: none;
+}

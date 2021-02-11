@@ -1,0 +1,97 @@
+/**********************颜色区************************/
+
+/* 主要颜色 */
+$color-dominant: #5077AA; /* 主色 */
+$color-primary: #2D4DAB;
+
+
+/* 白色 */
+$color-white: #FFFFFF; /* 白色 */
+$color-white-bright: #f5f5f5; /* 亮白色 */
+$color-white-bright-2: #f7f7f7; /* 亮白色 */
+$color-white-light: #EEEEEE; /* 亮白色 */
+$color-white-dark: #DDDDDD; /* 暗白色 */
+$color-white-forbidden: #C2C1D6; /* 暗白色 */
+
+
+/* 背景色 */
+$color-background: #F6F8F9; /* 页面背景色 */
+
+/* 背景透明色 */
+$color-background-transparency-3: rgba(0, 0, 0, .3); /* 页面背景色 */
+$color-background-transparency-4: rgba(0, 0, 0, .4); /* 页面背景色 */
+$color-background-transparency-8: rgba(0, 0, 0, .8); /* 页面背景色 */
+
+
+$color-background-1: #007aeb; /* 背景色2 */
+$color-background-2: #2D4DAB; /* 背景色4 */
+$color-background-3: #F2F2F2; /* 背景色2 */
+$color-background-4: #EDF4FD; /* 背景色3 */
+$color-background-5: #EDEDED; /* 背景色5 */
+$color-background-6: #F3F3F6; /* 背景色6 */
+$color-background-7: #E4E4E4; /* 背景色6 */
+$color-background-8: #173077; /* 背景色8 */
+
+/* 标题背景色 */
+$color-title-background-1: #F1F2F3; /* 标题背景色1 */
+$color-title-background-2: #E6EAF4; /* 标题背景色2 */
+
+
+/* 文字颜色 */
+$color-main-texts: #141923; /* 主要文字颜色 */
+
+
+$color-texts-1: #2D4DAB; /* 文字颜色1 */
+$color-texts-2: #656565; /* 文字颜色2 */
+$color-texts-3: #333333; /* 文字颜色3 */
+$color-texts-4: #545454; /* 文字颜色4 */
+$color-texts-6: #666666; /* 文字颜色6 */
+$color-texts-7: #777777; /* 文字颜色7 */
+$color-texts-8: #888888; /* 文字颜色8 */
+$color-texts-9: #BE6161; /* 文字颜色9 */
+$color-texts-10: #CA4444; /* 文字颜色10 */
+$color-texts-11: #A4CBF3; /* 文字颜色10 */
+$color-texts-12: #F2F2F2; /* 文字颜色10 */
+$color-texts-13: #B2B2B2; /* 文字颜色11 */
+
+
+$color-placeholder-1: #B6BABE; /* 输入框提示 */
+
+
+/* 分割线颜色 */
+$color-split-line-1: #f2f2f2; /* 分割线颜色1 */
+$color-split-line-2: #D4D4D4; /* 分割线颜色2 */
+$color-split-line-3: #DFE1E2; /* 分割线颜色3 */
+$color-split-line-4: #E7E7E7; /* 分割线颜色4 */
+
+$color-reminder-line-1: #2979D0; /* 提示线颜色1 */
+
+
+/* 提示颜色 */
+$color-primary-light: #2F7DCD; /* 按钮/标签亮颜色 */
+$color-tips-1: #B2B2B2; /* 提示颜色1 */
+$color-tips-2: #D5D5D5; /* 提示颜色2 */
+$color-warning: #FFBE00; /* 警示提示颜色 */
+$color-error: #EE3F3F; /* 强调/错误提示颜色 */
+$color-success: #49CB15; /* 成功提示颜色 */
+$color-click-active: #F1F4F8; /* 交互点击色 */
+$color-rise-rate: #5ED281; /* 上升率 */
+
+
+/* 边框颜色 */
+$color-border-1: #7396FF; /* 按钮边框颜色1 */
+$color-border-2: #1C60A5; /* 按钮边框颜色2 */
+$color-border-3: #C5C8CA; /* 按钮边框颜色3 */
+$color-border-4: #DEDEDE; /* 按钮边框颜色4 */
+$color-border-5: #979797; /* 按钮边框颜色5 */
+$color-border-6: #DDDDDD; /* 按钮边框颜色5 */
+
+/* 选中当前项 */
+$color-sidebar-select: rgba(0, 0, 0, 0.2); /* 选中当前项 */
+
+/* hover */
+$color-sidebar-hover: rgba(255, 255, 255, 0.1); /* hover */
+/**********************文字区************************/
+
+/* 标题背景色 */
+$color-title-background: #E6EAF4; /* 标题背景色 */

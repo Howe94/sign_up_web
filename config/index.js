@@ -29,9 +29,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',// /example
     proxyTable: {
-      '/api': {
+      '/signUpService': {
         target: 'http://8.129.110.202:1002',  //目标接口域名、
         changeOrigin: true,
+        pathRewrite: {
+          '^/signUpService': 'http://8.129.110.202:1002' //路径重写
+        }
       },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

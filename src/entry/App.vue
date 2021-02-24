@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-
+    <!--    头部组件-->
+    <howe-header></howe-header>
+    <!--    主体-->
     <router-view></router-view>
-
 
   </div>
 </template>
 
 <script>
+  //引入头部组件
+  import howeHeader from "./components/howeHeader";
+
   import Vue from 'vue'
 
   export default {
@@ -17,7 +21,7 @@
         innerWidth: 0,
       }
     },
-
+    components: {howeHeader},
     /* 组件实例刚刚被创建，组件属性计算之前，data属性为生成 */
     beforeCreate() {
 
@@ -113,7 +117,6 @@
         });
       }
     },
-    components: {},
   }
 </script>
 

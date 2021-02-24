@@ -1,7 +1,10 @@
 <template>
-  <div i="organize-index">
-    <div class="organize-list-boxes">
-      投票系统
+  <div i="home-page-index">
+    <div class="home-page-boxes">
+      <div class="main-boxes">
+        博客首页
+      </div>
+
     </div>
   </div>
 </template>
@@ -10,7 +13,7 @@
   /* 接口地址 */
   import * as Service from "./service.js";
   export default {
-    name: "organize",
+    name: "homePage",
     data() {
       return {};
     },
@@ -70,7 +73,7 @@
 <style rel="stylesheet/scss" lang="scss">
   @import "~style/common/table";
 
-  [i="organize-index"] {
+  [i="home-page-index"] {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -82,39 +85,12 @@
     -khtml-user-select: none;
     user-select: none;
 
-    .organize-list-boxes {
+    .home-page-boxes {
       .main-boxes {
         min-width: 925px;
         width: -webkit-calc(100% - 520px); /*no*/
         width: -moz-calc(100% - 520px); /*no*/
         width: calc(100% - 520px); /*no*/
-        .table-content-boxes .content-boxes .button-boxes .input-button .el-input {
-          width: 160px;
-
-          .el-input__inner {
-            border: 1px solid $color-border-3;
-            border-radius: 0;
-          }
-        }
-      }
-
-      .site-boxes {
-        min-width: 260px;
-        background: $color-white;
-
-        .organize-dropdown-btn, .organize-group-btn {
-          width: 100%;
-          position: absolute;
-          bottom: 0px;
-
-          .blue-button {
-            height: 32px;
-            line-height: 32px;
-            text-align: center;
-            color: $color-white;
-            background-color: $color-background-1;
-          }
-        }
       }
 
       .data-entity {

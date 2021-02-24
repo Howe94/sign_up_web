@@ -28,7 +28,7 @@ module.exports = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: 'src/entry/index.html',//入口模板文件
       inject: true,
       chunks: ['app']
     }),

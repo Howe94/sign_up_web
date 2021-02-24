@@ -27,7 +27,8 @@ module.exports = {
     port: 8888,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',// /example
+    assetsPublicPath: '/',
+    publicPath:'myBlog',
     proxyTable: {
       '/signUpService': {
         target: 'http://8.129.110.202:1002',  //目标接口域名、

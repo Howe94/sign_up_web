@@ -1,18 +1,19 @@
 export default {
-  // mode: 'history',//history
-  // base: '/',//history
+  mode: 'history',//history
+  base: '/myBlog',//history
   routes: [
-    /*组织架构同步*/
+    /*博客首页*/
     {
-      path: '/signUp',
-      name: 'signUp',
+      path: '/index',
+      name: 'index',
       component: resolve => {
-        require.ensure(['@/views/module/signUp/index.vue'], () => {
-          resolve(require('@/views/module/signUp/index.vue'));
-        }, 'chunk/signUp');
+        require.ensure(['@/views/module/homePage/index.vue'], () => {
+          resolve(require('@/views/module/homePage/index.vue'));
+        }, 'chunk/homePage');
       },
       meta: {
-        title: '组织架构同步'
+        title: '主页',
+        requireAuth: false
       }
     },
     {

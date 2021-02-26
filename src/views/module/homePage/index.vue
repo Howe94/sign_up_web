@@ -26,7 +26,7 @@
     created() {
       const that = this;
       //获取字典
-      that.initDictionary();
+      // that.initDictionary();
     },
 
     /* 模板编译/挂载之后 */

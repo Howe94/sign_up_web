@@ -1,8 +1,22 @@
 <template>
   <div i="home-page-index">
     <div class="home-page-boxes">
-      <div class="main-boxes">
-        博客首页
+      <div class="main-content">
+        <!--顶部的内容-->
+        <main-top></main-top>
+        <!--博客内容-->
+        <common-body isColumn :rightWidth="'300px'">
+          <template slot="left">
+            <div class="content-left">
+              <article-box></article-box>
+            </div>
+          </template>
+          <template slot="right">
+            <div class="content-right">
+              右侧信息
+            </div>
+          </template>
+        </common-body>
       </div>
 
     </div>
@@ -10,14 +24,22 @@
 </template>
 
 <script>
+  // 引入组件
+  import mainTop from "./commonModel/mainTop";
+  import commonBody from "../../../components/commonBody";
+  import articleBox from "./commonModel/articleBox";
   /* 接口地址 */
   import * as Service from "./service.js";
+
   export default {
     name: "homePage",
     data() {
       return {};
     },
+    components: {mainTop,commonBody,articleBox},
+    watch: {},
 
+    filters: {},
     /* 组件实例刚创建，组件属性计算之前 */
     beforeCreate() {
     },
@@ -63,22 +85,19 @@
             });
       },
     },
-    watch: {
-    },
-    components: {},
-    filters: {}
   };
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
   @import "~style/common/table";
 
+
   [i="home-page-index"] {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 
     /* 禁止复制文本 */
     -moz-user-select: none;
@@ -86,17 +105,8 @@
     user-select: none;
 
     .home-page-boxes {
-      .main-boxes {
-        min-width: 925px;
-        width: -webkit-calc(100% - 520px); /*no*/
-        width: -moz-calc(100% - 520px); /*no*/
-        width: calc(100% - 520px); /*no*/
-      }
-
-      .data-entity {
-        height: -webkit-calc(100% - 130px); /*no*/
-        height: -moz-calc(100% - 130px); /*no*/
-        height: calc(100% - 130px); /*no*/
+      .main-content {
+        text-align: center;
       }
     }
   }

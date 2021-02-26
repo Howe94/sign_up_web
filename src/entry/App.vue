@@ -4,7 +4,7 @@
     <howe-header></howe-header>
     <!--    主体-->
     <router-view></router-view>
-
+    <div class="body-bg"></div>
   </div>
 </template>
 
@@ -132,6 +132,22 @@
     height: 100%;
     min-height: 656px;
     overflow: hidden;
+    .body-bg{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -999999;
+      height: 100vh;
+      width: 100vw;
+      transition: background .5s;
+      background: url("~@/assets/images/blog-bg.jpg") center center / cover no-repeat;
+      /*opacity: 0.5;*/
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+    }
   }
 
 </style>

@@ -141,11 +141,11 @@
     user-select: none;
 
     .howe-header-boxs {
-
+      box-shadow: 0 2px 5px #0000000f;
       position: relative;
       line-height: 28px;
       transition: transform .3s;
-      background: $color-background-1;
+      background: $color-white;
       padding: 10px 20px;
 
       .header-left,

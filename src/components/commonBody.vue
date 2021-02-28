@@ -50,6 +50,10 @@
       .content-item {
         display: inline-block;
         min-height: inherit;
+        vertical-align: top;
+      }
+      .content-right{
+        padding: 0 20px;
       }
     }
 

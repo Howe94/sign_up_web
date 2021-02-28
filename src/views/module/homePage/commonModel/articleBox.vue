@@ -1,13 +1,13 @@
 <template>
   <div i="article-box-index">
     <div class="article-box-content">
-      <el-card class="article-card" v-for="(item,index) in articleList" :key="" index>
+      <el-card class="article-card" v-for="(item,index) in articleList" :key="index">
         <div slot="header" class="card-header">
           <h2 class="article-title">{{item.article_tilte}}</h2>
           <div class="article-info">
-            <span>作者:{{item.user_name}}</span>
-            <span>创作时间:{{item.last_update_time}}</span>
-            <span>阅读量:{{item.article_comment_count}}</span>
+            <span class="author"><i class="el-icon-s-custom"></i>{{item.user_name}}</span>
+            <span><i class="el-icon-date"></i>{{item.last_update_time}}</span>
+            <span><i class="el-icon-view"></i>{{item.article_comment_count}}</span>
           </div>
         </div>
         <div class="card-body">
@@ -112,11 +112,20 @@
 
             .article-info {
               font-size: 12px;
-              color: $color-dominant;
-
               span {
+                i{
+                  color: $color-dominant;
+                  margin-right: 5px;
+                }
                 &:not(:nth-of-type(0)) {
                   margin-right: 12px;
+                }
+                &.author{
+                  &:hover{
+                    cursor: pointer;
+                  color: $color-dominant;
+                  font-weight:600;
+                  }
                 }
               }
             }

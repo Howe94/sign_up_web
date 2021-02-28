@@ -5,7 +5,7 @@
         <!--顶部的内容-->
         <main-top></main-top>
         <!--博客内容-->
-        <common-body isColumn :rightWidth="'300px'">
+        <common-body isColumn :rightWidth="'380px'">
           <template slot="left">
             <div class="content-left">
               <article-box></article-box>
@@ -13,7 +13,7 @@
           </template>
           <template slot="right">
             <div class="content-right">
-              右侧信息
+              <recommend-box></recommend-box>
             </div>
           </template>
         </common-body>
@@ -28,6 +28,7 @@
   import mainTop from "./commonModel/mainTop";
   import commonBody from "../../../components/commonBody";
   import articleBox from "./commonModel/articleBox";
+  import recommendBox from "./commonModel/recommendBox"
   /* 接口地址 */
   import * as Service from "./service.js";
 
@@ -36,7 +37,7 @@
     data() {
       return {};
     },
-    components: {mainTop,commonBody,articleBox},
+    components: {mainTop,commonBody,articleBox,recommendBox},
     watch: {},
 
     filters: {},
